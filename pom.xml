@@ -8,17 +8,28 @@
         <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.mydla.mydlaApp</groupId>
-    <artifactId>demo</artifactId>
+
+    <groupId>com.mydelka</groupId>
+    <artifactId>mydelka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
+    <name>mydelka</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -27,10 +38,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-security</artifactId>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
